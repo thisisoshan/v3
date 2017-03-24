@@ -1,0 +1,95 @@
+html, body, .wrapper {
+	height: 100%;
+	width: 100%;
+}
+body {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	background: linear-gradient(-62deg, #ccc, #888);
+	font-family: 'Raleway Dots', cursive;
+	font-size: 19px;
+	color: #333;
+	overflow-y: hidden;
+}
+.container {
+	position: absolute;
+	top: 15%;
+	width: 85%;
+	height: 70%;
+	left: 7.5%;
+	box-shadow: 15px 15px 50px rgba(0,0,0, 0.35), -15px -15px 50px rgba(0,0,0, 0.35);
+}
+.wrapper {
+	position: relative;
+	overflow: hidden;
+}
+.img, .supp-text, .overlay {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 50%;
+}
+.img {
+	background: url("img/img-2.png") no-repeat no-repeat center center scroll;
+	background-size: cover;
+	left: 0;
+	z-index: 1;
+	transition: transform 0.7s ease;
+}
+.img:hover {
+	transform: scale(1.25);
+}
+.supp-text {
+	right: 0;
+	background: #fff;
+	z-index: 1;
+}
+.overlay {
+	width: 50%;
+	z-index: 2;
+}
+span{
+	color: #888;
+	text-transform: uppercase;
+}
+a, a:visited, a:focus, a:active {
+	text-decoration: none;
+	color: #111;
+	transition: all 0.5s ease;
+}
+a:hover {
+	color: #222;
+	border-bottom: 1px dotted #222;
+	transform: scale(3);
+}
+@media screen and (max-width: 1000px) {
+	body {
+		font-size: 17px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.wrapper {
+		overflow-y: scroll;
+	}
+	.img, .overlay, .supp-text {
+		height: 50%;
+		width: 100%;
+	}
+	.img, .overlay {
+		top: 0;
+	}
+	.supp-text {
+		padding-top: 20px;
+		top: 50%;
+		height: auto;
+	}
+}
+@media (min-width: 1640px) {
+	body {
+		font-size: 22px;
+	}
+	.supp-text {
+		padding-top: 5%;
+	}
+}

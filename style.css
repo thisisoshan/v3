@@ -92,4 +92,7 @@ a:hover {
 	.supp-text {
 		padding-top: 5%;
 	}
+	.img {
+		background: url("img/img-2.png") no-repeat no-repeat center center scroll;
+	}
 }

@@ -8,10 +8,11 @@ body {
 	margin: 0;
 	background: /*linear-gradient(-62deg, #ccc, #888)*/ url("img/bg.jpg") no-repeat no-repeat center center scroll;
 	background-size: cover;
-	font-family: 'Raleway Dots', cursive;
+	font-family: 'Raleway', cursive;
 	font-size: 19px;
 	color: #333;
 	overflow-y: hidden;
+	user-select: none;
 }
 .container {
 	position: absolute;

@@ -33,8 +33,8 @@ body {
 	width: 50%;
 }
 .img {
-	background: url("img/img-2.jpg") no-repeat no-repeat center center scroll;
-	background-size: cover;
+	/*background: url("img/img-2.jpg") no-repeat no-repeat center center scroll;
+	background-size: cover;*/
 	left: 0;
 	z-index: 1;
 	transition: transform 0.7s ease;
@@ -45,7 +45,7 @@ body {
 .supp-text {
 	right: 0;
 	background: #fff;
-	z-index: 1;
+	z-index: 2;
 }
 .overlay {
 	width: 50%;
@@ -63,7 +63,6 @@ a, a:visited, a:focus, a:active {
 a:hover {
 	color: #222;
 	border-bottom: 1px dotted #222;
-	transform: scale(3);
 }
 @media screen and (max-width: 1000px) {
 	body {

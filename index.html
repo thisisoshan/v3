@@ -11,12 +11,13 @@
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-	<script type="text/javascript" src="instafeed.js"></script>
-	<script type="text/javascript" src="core.js"></script>
+	<!-- <script type="text/javascript" src="instafeed.js"></script>
+	<script type="text/javascript" src="core.js"></script> -->
 </head>
 <body>
 	<div class="container">
 		<div id="instafeed" class="wrapper">
+			<div class="img" style="background: url('./img/person.jpg') no-repeat no-repeat center center scroll; background-size: cover;"></div>
 			<!--<div class="overlay"></div>
 			<img src="../portfolio/img/img-2.jpg">-->
 			<!--<div class="img"></div>-->
@@ -24,21 +25,25 @@
 				<h1>Hi<span>...</span></h1>
 				<h2>This is <span>Oshan</span>.</h2>
 				<h3>
-					I am a front-end web developer. <br>
-					I am living in Kathmandu. <br>
-					I have completed GCE A-Levels.
+					I am a sophomore at Kathmandu University. <br>
+					I am an aspiring web developer.
 				</h3>
 				<h4>
-					I do freelance web designing. <br>
+					I am live in Dhulikhel. <br>
 					I love pop and country music.
 				</h4>
 				<h5>Say hello! at <a href="mailto:oshan_shrestha@outlook.com">my mail</a>,<br>
-				add me on <a target="_blank" href="https://facebook.com/shrestha.oshan">facebook</a>,<br>
+				add me on <a target="_blank" href="https://facebook.com/oshan.shr">facebook</a>,<br>
 				follow me on <a target="_blank" href="https://twitter.com/shrestha_oshan">twitter</a><br>
-				or connect me on <a target="_blank" href="https://linkedin.com/in/oshan-shrestha">linkedin</a>.</h5>
+				or connect with me on <a target="_blank" href="https://linkedin.com/in/oshan-shrestha">linkedin</a>.</h5>
 			</div>
 		</div>
 	</div>
-	<h6>All Rights Reserved | Oshan Shrestha &copy; 2017</h6>
+	<div class="copy">
+		<h6>All Rights Reserved | Oshan Shrestha &copy; <b id="thisYear"></b></h6>
+	</div>
+	<script>
+		document.getElementById("thisYear").innerHTML = (new Date).getFullYear()
+	</script>
 </body>
 </html>
